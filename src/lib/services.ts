@@ -225,8 +225,8 @@ export const services: readonly ServiceContent[] = [
       "Preparing for a Normal Vaginal Delivery at BirthWave. Antenatal care, birth preparation, labour support, and post-delivery recovery.",
     accent: "coral",
     image: {
-      src: "/images/birthwave/birthwave-birth-position-practice.png",
-      alt: "Preparing for a normal vaginal delivery at BirthWave",
+      src: "/images/image3.jpg",
+      alt: "Dr. Santoshi Nandigam with a newborn at BirthWave",
     },
     illustration: "birth",
     hero: {

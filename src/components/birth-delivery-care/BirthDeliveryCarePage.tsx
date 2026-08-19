@@ -171,11 +171,11 @@ export function BirthDeliveryCarePage() {
           <div className="relative mx-auto flex h-[380px] w-full max-w-lg items-center justify-center overflow-hidden rounded-[32px] bg-pink p-3.5 sm:h-[460px] sm:p-4 shadow-[0_12px_40px_rgba(46,36,33,0.08)]">
             <div className="relative h-full w-full overflow-hidden rounded-[24px]">
               <Image
-                src="/images/birthwave/birthwave-birth-position-practice.png"
-                alt="Preparing for a normal vaginal delivery at BirthWave"
+                src="/images/image3.jpg"
+                alt="Dr. Santoshi Nandigam with a newborn at BirthWave"
                 fill
                 sizes="(min-width: 1280px) 500px, 90vw"
-                className="object-cover object-top"
+                className="object-cover object-[center_20%]"
                 priority
               />
             </div>
