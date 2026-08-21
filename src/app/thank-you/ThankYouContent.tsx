@@ -10,9 +10,8 @@ export function ThankYouContent() {
   const serviceSlug = searchParams.get("service");
   const serviceTitle = serviceSlug ? getFormServiceTitle(serviceSlug) : undefined;
 
-  const whatsappHref = `https://wa.me/919363031925?text=${encodeURIComponent(
-    `Hi, I just submitted an enquiry through the Birthwave website${
-      serviceTitle ? ` for ${serviceTitle}` : ""
+  const whatsappHref = `https://wa.me/917904251378?text=${encodeURIComponent(
+    `Hi, I just submitted an enquiry through the Birthwave website${serviceTitle ? ` for ${serviceTitle}` : ""
     }.`
   )}`;
 
