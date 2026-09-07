@@ -1,14 +1,26 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { getFormServiceTitle } from "@/lib/services";
 import { site } from "@/lib/site";
+
+declare global {
+  interface Window {
+    oaiq?: (...args: unknown[]) => void;
+  }
+}
 
 export function ThankYouContent() {
   const searchParams = useSearchParams();
   const serviceSlug = searchParams.get("service");
   const serviceTitle = serviceSlug ? getFormServiceTitle(serviceSlug) : undefined;
+
+  // OpenAI pixel — fire the registration-completed conversion once on load.
+  useEffect(() => {
+    window.oaiq?.("measure", "registration_completed", { type: "customer_action" });
+  }, []);
 
   const whatsappHref = `https://wa.me/917904251378?text=${encodeURIComponent(
     `Hi, I just submitted an enquiry through the Birthwave website${serviceTitle ? ` for ${serviceTitle}` : ""
